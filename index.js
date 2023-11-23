@@ -58,6 +58,7 @@ const processImage = async (imageName) => {
             console.log('Error: '+error.message);
         else
             console.log(imagePath);
+            console.log(exifData.exif.DateTimeOriginal)
             imageDate = formatDate(exifData.exif.DateTimeOriginal);
             dateX = exifData.exif.ExifImageWidth;
             dateY = exifData.exif.ExifImageHeight;
